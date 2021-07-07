@@ -1,3 +1,58 @@
+:root {
+  --Font: "Montserrat";
+  --Brown: #DE8F75;
+  --Blue: #5F75AA;
+  --GreyBlue: #AEB6C1;
+  --Purple: #A9095E;
+  --BlueAqua: #2A5A75;
+  --Black: #000000;
+  --White: #FFFFFF;
+  --Green: #32917B;
+  --White2: #F2F2F2;
+  --Silver: #EBEBEB;
+  --Grey: #E3E3E3;
+  --Grey2: #CCCCCC;
+  --Grey3: #ADADAD;
+  --Grey4: #7F7F7F;
+  --Grey5: #686868;
+}
 
+a {
+  text-decoration: none;
+}
 
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .logo {
+  width: 100%;
+  text-align: center;
+  padding: 26px 0;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .nav .login {
+  font-family: var(--Font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17,55px;
+}
+
+.header .nav .login > a {
+  color: var(--Grey5);
+}
 /*# sourceMappingURL=styles.css.map */
