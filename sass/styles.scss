@@ -16,8 +16,22 @@
     --Grey4: #7F7F7F;
     --Grey5: #686868;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat","sans-serif"!important;
+}
+
 a{
     text-decoration: none;
+}
+
+img{
+    display: block;
 }
 
 body{
@@ -30,23 +44,81 @@ body{
     .logo{
         width: 100%;
         text-align: center;
-        padding: 26px 0;
+        display: flex;
+        flex: 1 1;
+        justify-content: center;
+        align-items: center;
+        height: 86px;
     }
 
     .nav{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 40px;
+        border-top: 1px solid var(--Grey2); 
+        border-bottom: 1px solid var(--Grey2); 
+        flex-wrap: nowrap;
 
         .login{
             font-family: var(--Font);
             font-weight: 400;
             font-size: 12px;
             line-height: 17,55px;
-            >a{
+
+            >span{
                 color: var(--Grey5);
             }
-            
+            >a{
+                color: var(--Grey5);
+                padding: 0 10px;
+            }
         }
+
+        .categorias{
+            font-family: var(--Font);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            
+
+            >a{
+                color: var(--Grey5);
+                text-transform: uppercase;
+                padding: 0 25px;
+            }
+        }
+
+        .navbar-direita{
+            display: flex;
+            
+            .busca{
+                >input{
+                    margin-right: 2em;
+                    background: url(/assets/img/icone-busca.svg) no-repeat 9px;
+                    padding-left: 40px;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid hsla(0,0%,40.8%,.4);
+                    height: 35px;
+                    outline: none;
+                    width: 100px;
+                    left: 50px;
+                    transition: .4s;
+                }
+            }
+
+            .sacola{
+                display: flex;
+                align-items:flex-end;
+
+                >span{
+                    font-family: "Open Sans";
+                    font-size: 12px;
+                }
+            }
+        }
+
     }
 }
 

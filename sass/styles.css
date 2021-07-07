@@ -17,8 +17,21 @@
   --Grey5: #686868;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", "sans-serif" !important;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -33,16 +46,35 @@ body {
 .header .logo {
   width: 100%;
   text-align: center;
-  padding: 26px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 86px;
 }
 
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 40px;
+  border-top: 1px solid var(--Grey2);
+  border-bottom: 1px solid var(--Grey2);
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .header .nav .login {
@@ -52,7 +84,64 @@ body {
   line-height: 17,55px;
 }
 
+.header .nav .login > span {
+  color: var(--Grey5);
+}
+
 .header .nav .login > a {
   color: var(--Grey5);
+  padding: 0 10px;
+}
+
+.header .nav .categorias {
+  font-family: var(--Font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header .nav .categorias > a {
+  color: var(--Grey5);
+  text-transform: uppercase;
+  padding: 0 25px;
+}
+
+.header .nav .navbar-direita {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav .navbar-direita .busca > input {
+  margin-right: 2em;
+  background: url(/assets/img/icone-busca.svg) no-repeat 9px;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(104, 104, 104, 0.4);
+  height: 35px;
+  outline: none;
+  width: 100px;
+  left: 50px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.header .nav .navbar-direita .sacola {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header .nav .navbar-direita .sacola > span {
+  font-family: "Open Sans";
+  font-size: 12px;
 }
 /*# sourceMappingURL=styles.css.map */
