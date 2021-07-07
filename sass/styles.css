@@ -144,6 +144,11 @@ body {
   font-size: 12px;
 }
 
+.produto-info {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 .produto-info .pagina-atual {
   padding: 16px 40px;
   line-height: 18px;
@@ -205,6 +210,11 @@ body {
 .produto-info .container-info .carrossel-produto .videos .container-video {
   width: 82px;
   height: 45px;
-  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.produto-info .container-info .carrossel-produto .videos .container-video > img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */

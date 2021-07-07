@@ -122,6 +122,8 @@ body{
 }
 
 .produto-info{
+    max-width: 1250px;
+    margin: 0 auto;
     .pagina-atual{
         padding: 16px 40px;
         line-height: 18px;
@@ -160,7 +162,11 @@ body{
                 .container-video{
                     width: 82px;
                     height: 45px;
-                    padding: 10px 0;
+                    margin-bottom: 50px;
+
+                    >img{
+                        object-fit: cover;
+                    }
                 }
             }
         }
