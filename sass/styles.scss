@@ -1,5 +1,4 @@
  :root {
-    --Font: "Montserrat";
     --Brown: #DE8F75;
     --Blue: #5F75AA;
     --GreyBlue: #AEB6C1;
@@ -32,6 +31,7 @@ a{
 
 img{
     display: block;
+    max-width: 100%;
 }
 
 body{
@@ -61,7 +61,6 @@ body{
         flex-wrap: nowrap;
 
         .login{
-            font-family: var(--Font);
             font-weight: 400;
             font-size: 12px;
             line-height: 17,55px;
@@ -121,4 +120,52 @@ body{
 
     }
 }
+
+.produto-info{
+    .pagina-atual{
+        padding: 16px 40px;
+        line-height: 18px;
+        color: var(--GreyBlue);
+    }
+
+    .container-info{
+        display: flex;
+        margin-left: 40px;
+
+        .carrossel-produto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .miniatura{
+                width: 82px;
+                height: 94px;
+            }
+
+            .videos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                >p{
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    color: var(--Brown);
+                }
+
+                .container-video{
+                    width: 82px;
+                    height: 45px;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+
 
