@@ -604,6 +604,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .footer-leftside {
@@ -618,7 +621,6 @@ body {
 
 .footer .footer-leftside .social-media {
   margin-top: 20px;
-  margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,7 +635,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
-  margin-left: 70px;
 }
 
 .footer .footer-leftside .certificados > img {
@@ -803,7 +804,14 @@ body {
           align-items: center;
 }
 
-.rodape .texto {
+.rodape .container-rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.rodape .container-rodape .texto {
   max-width: 728px;
   font-size: 12px;
   line-height: 18px;

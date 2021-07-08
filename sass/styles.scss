@@ -515,6 +515,7 @@ body{
     margin-top: 145px;
     border-top: 2px solid #AEB6C1;
     display: flex;
+    justify-content: center;
 
     .footer-leftside{
         display: flex;
@@ -522,7 +523,6 @@ body{
 
         .social-media{
             margin-top: 20px;
-            margin-left: 70px;
             display: flex;
             >img{
                 padding-right: 30px;
@@ -532,7 +532,6 @@ body{
         .certificados{
             display: flex;
             margin-top: 50px;
-            margin-left: 70px;
             >img{
                 padding-right: 30px;
             }
@@ -659,12 +658,17 @@ body{
     padding: 15px 100px;
     align-items: center;
 
-    .texto{
-        max-width: 728px;
-        font-size: 12px;
-        line-height: 18px;
-        color: var(--White);
+    .container-rodape{
+        display: flex;
+        margin: 0 auto;
+        .texto{
+            max-width: 728px;
+            font-size: 12px;
+            line-height: 18px;
+            color: var(--White);
+        }
     }
+
 }
 
 
