@@ -41,6 +41,14 @@ body{
 .header{
     width: 100%;
 
+    #menu-trigger{
+        display: none;
+    }
+    
+    .menu-hidde{
+        display: none;
+    }
+
     .logo{
         width: 100%;
         text-align: center;
@@ -119,6 +127,36 @@ body{
         }
 
     }
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+    .header {
+        
+        #menu-trigger{
+            display: block;
+        }
+
+        .menu-hidde{
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            position: absolute;
+            left: -100%;
+        }
+
+        .nav{
+            justify-content: space-between;
+
+            .login{
+                display: none;
+            }
+            .categorias{
+                display: none;
+            }
+        }
+        
+    }
+
 }
 
 .pagina-atual{

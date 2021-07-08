@@ -43,6 +43,14 @@ body {
   width: 100%;
 }
 
+.header #menu-trigger {
+  display: none;
+}
+
+.header .menu-hidde {
+  display: none;
+}
+
 .header .logo {
   width: 100%;
   text-align: center;
@@ -142,6 +150,35 @@ body {
 .header .nav .navbar-direita .sacola > span {
   font-family: "Open Sans";
   font-size: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .header #menu-trigger {
+    display: block;
+  }
+  .header .menu-hidde {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #FFFFFF;
+    position: absolute;
+    left: -100%;
+  }
+  .header .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .nav .login {
+    display: none;
+  }
+  .header .nav .categorias {
+    display: none;
+  }
 }
 
 .pagina-atual {
