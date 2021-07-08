@@ -209,6 +209,9 @@ body{
         max-width: 444px;
         border: 2px solid #D2E1DF;
         border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .titulo-id{
             margin-top: 18px;
@@ -230,7 +233,7 @@ body{
 
         .valores{
             margin-left: 18px;
-            margin-bottom: 55px;
+            margin-bottom: 25px;
             .preco{
                 display: flex;
                 align-items: center;
@@ -241,12 +244,13 @@ body{
 
                 .valor-antigo{
                     margin-right: 10px;
+                    font-size: 20px;
                     color: #E35442;
                 }
 
                 .valor-novo{
                     font-weight: 700;
-                    font-size: 20px;
+                    font-size: 32px;
                     line-height: 32px;
                     color: var(--Grey5);
                 }
@@ -255,7 +259,7 @@ body{
             >p{
                 font-weight: 400;
                 font-size: 12px;
-                line-height: 5px;
+                line-height: 20px;
                 color: var(--Grey4);
             }
         }
