@@ -144,22 +144,28 @@ body {
   font-size: 12px;
 }
 
-.produto-info {
+.pagina-atual {
   max-width: 1250px;
   margin: 0 auto;
-}
-
-.produto-info .pagina-atual {
   padding: 16px 40px;
   line-height: 18px;
   color: var(--GreyBlue);
+}
+
+.produto-info {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
 }
 
 .produto-info .container-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .produto-info .container-info .carrossel-produto {
@@ -176,11 +182,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.produto-info .container-info .carrossel-produto .miniatura {
-  width: 82px;
-  height: 94px;
 }
 
 .produto-info .container-info .carrossel-produto .videos {
@@ -210,11 +211,246 @@ body {
 .produto-info .container-info .carrossel-produto .videos .container-video {
   width: 82px;
   height: 45px;
-  margin-bottom: 50px;
+  margin: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .produto-info .container-info .carrossel-produto .videos .container-video > img {
+  width: 82px;
+  height: 45px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.produto-info .container-info .carrossel-produto .videos .container-video > .play-icon {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 5px;
+  left: 23px;
+}
+
+.produto-info .container-info .carrossel-produto .lista-miniatura .miniatura {
+  width: 82px;
+  height: 94px;
+  margin-bottom: 10px;
+}
+
+.produto-info .container-info .carrossel-produto .lista-miniatura span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.produto-info .container-info .carrossel-produto .lista-miniatura span:last-child {
+  margin-top: 20px;
+}
+
+.produto-info .informacoes {
+  max-width: 444px;
+  border: 2px solid #D2E1DF;
+  border-radius: 3px;
+}
+
+.produto-info .informacoes .titulo-id {
+  margin-top: 18px;
+  margin-left: 18px;
+  margin-bottom: 17px;
+}
+
+.produto-info .informacoes .titulo-id > h1 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.produto-info .informacoes .titulo-id > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.produto-info .informacoes .valores {
+  margin-left: 18px;
+  margin-bottom: 55px;
+}
+
+.produto-info .informacoes .valores .preco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.produto-info .informacoes .valores .preco .valor-antigo {
+  margin-right: 10px;
+  color: #E35442;
+}
+
+.produto-info .informacoes .valores .preco .valor-novo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--Grey5);
+}
+
+.produto-info .informacoes .valores > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 5px;
+  color: var(--Grey4);
+}
+
+.produto-info .informacoes .cor {
+  margin-left: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.produto-info .informacoes .cor > p:first-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.produto-info .informacoes .cor > p:last-child {
+  padding-left: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--Blue);
+}
+
+.produto-info .informacoes .cores-selecao {
+  margin-left: 12px;
+}
+
+.produto-info .informacoes .cores-selecao > span {
+  margin: 13px 5px 17px 5px;
+}
+
+.produto-info .informacoes .cores-selecao .circulo-rosa {
+  width: 22px;
+  height: 22px;
+  background-color: var(--Purple);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.produto-info .informacoes .cores-selecao .circulo-azul {
+  width: 22px;
+  height: 22px;
+  background-color: var(--BlueAqua);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.produto-info .informacoes .cores-selecao .circulo-marrom {
+  width: 22px;
+  height: 22px;
+  background-color: #A14830;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.produto-info .informacoes .cores-selecao .circulo-preto {
+  width: 22px;
+  height: 22px;
+  background-color: var(--Black);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.produto-info .informacoes .tamanho-title {
+  margin-left: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.produto-info .informacoes .tamanho-title .tamanho-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.produto-info .informacoes .tamanho-title .tamanho-desc .tamanho {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--Blue);
+}
+
+.produto-info .informacoes .tamanho-title .tamanho-desc > p:first-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #202020;
+  padding-right: 10px;
+}
+
+.produto-info .informacoes .tamanho-title > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+  color: var(--Brown);
+  padding-right: 18px;
+}
+
+.produto-info .informacoes .tamanhos {
+  margin-left: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+.produto-info .informacoes .tamanhos .numero {
+  font-size: 14px;
+  color: var(--Blue);
+  border: 1px solid var(--Silver);
+  border-radius: 2px;
+  padding: 10px;
+  margin-right: 3px;
+}
+
+.produto-info .informacoes .button-sacola {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--White);
+  background-color: var(--Green);
+  padding: 23px 100px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-left: 18px;
+}
+
+.produto-info .informacoes .texto {
+  margin: 30px  20px  30px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #202020;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

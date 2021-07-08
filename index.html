@@ -43,45 +43,49 @@
         </nav>
     </header>
 
+
+    <div class="pagina-atual">
+        <p>Home / <b>Sapatos</b></p>
+    </div>
     <section class="produto-info">
-        <div class="pagina-atual">
-            <p>Home / <b>Sapatos</b></p>
-        </div>
 
         <div class="container-info">
             <div class="carrossel-produto">
                 <div class="videos">
                     <p>Vídeo</p>
                     <div class="container-video">
-                        <img class="miniatura-video" src="assets/img/foto-produto.png" alt="miniatura do video">
-                        <img src="assets/img/play-icon.svg" alt="simbolo de reprodução">
+                        <img class="miniatura-video" src="assets/img/foto-produto-opacity.png" alt="miniatura do video">
+                        <img class="play-icon" src="assets/img/play-icon.svg" alt="simbolo de reprodução">
                     </div>
                 </div>
 
                 <div class="lista-miniatura">
-                    <span>arrow</span>
+                    <span><img src="assets/img/arrow-up.svg" alt="seta para cima"></span>
                     <img class="miniatura" src="assets/img/foto-produto.png" alt="imagem do produto">
                     <img class="miniatura" src="assets/img/foto-produto.png" alt="imagem do produto">
                     <img class="miniatura" src="assets/img/foto-produto.png" alt="imagem do produto">
                     <img class="miniatura" src="assets/img/foto-produto.png" alt="imagem do produto">
-                    <span>arrow</span>
+                    <span><img src="assets/img/arrow-down.svg" alt="seta para baixo"></span>
                 </div>
             </div>
         </div>
 
         <div class="imagem-principal">
-            <img src="#" alt="imagem selecionada">
+            <img src="assets/img/foto-produto.png" alt="imagem selecionada">
         </div>
 
-        <div class="informações">
+        <div class="informacoes">
             <div class="titulo-id">
                 <h1>Rasteira Tira Dedo</h1>
                 <p>RT 0568 | 03.07.0653</p>
             </div>
             
             <div class="valores">
-                <p class="valor-antigo">R$ 69,00 |</p>
-                <p class="valor-novo">R$ 55,20</p>
+                <div class="preco">
+                    <p class="valor-antigo">R$ 69,00 |</p>
+                    <p class="valor-novo">R$ 55,20</p><br>
+                </div>
+                
                 <p >Ou 6x de  R$ 9,20</p>
             </div>
 
@@ -91,20 +95,23 @@
             </div>
 
             <div class="cores-selecao">
-                <div class="circulo-rosa"></div>
-                <div class="circulo-azul"></div>
-                <div class="circulo-marrom"></div>
-                <div class="circulo-preto"></div>
+                <span class="circulo-rosa"></span>
+                <span class="circulo-azul"></span>
+                <span class="circulo-marrom"></span>
+                <span class="circulo-preto"></span>
             </div>
 
             <div class="tamanho-title">
-                <p>Tamanho:</p>
-                <p id="tamanho" class="tamanho">(37)</p>
+                <div class="tamanho-desc">
+                    <p>Tamanho:</p> 
+                    <p class="tamanho">(37)</p>
+                </div>
+
 
                 <p>Guia de medidas</p>
             </div>
 
-            <div class="Tamanhos">
+            <div class="tamanhos">
                 <div class="numero">33</div>
                 <div class="numero">34</div>
                 <div class="numero">35</div>
@@ -117,9 +124,9 @@
                 <div class="numero">42</div>
             </div>
             
-            <button>Adicionar à sacola</button>
+            <button class="button-sacola">Adicionar à sacola</button>
 
-            <p>Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
+            <p class="texto">Rasteira em atanado soft com tira no dedo e fechamento de fivela. Possui sola sempre na cor do cabedal.</p>
         </div>
     </section>
 
