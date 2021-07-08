@@ -264,9 +264,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .produto-info .informacoes .titulo-id {
@@ -432,6 +429,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-top: 10px;
+  margin-bottom: 40px;
 }
 
 .produto-info .informacoes .tamanhos .numero {
@@ -444,7 +442,6 @@ body {
 }
 
 .produto-info .informacoes .button-sacola {
-  margin-top: 50px;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -453,7 +450,7 @@ body {
   padding: 23px 100px;
   border-radius: 5px;
   text-transform: uppercase;
-  margin-left: 18px;
+  margin: 0 auto;
 }
 
 .produto-info .informacoes .texto {
