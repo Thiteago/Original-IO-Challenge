@@ -110,10 +110,25 @@
             </div>
 
             <div class="cores-selecao">
-                <span class="circulo-rosa"></span>
-                <span class="circulo-azul"></span>
-                <span class="circulo-marrom"></span>
-                <span class="circulo-preto"></span>
+                <label class="container" onclick="selectColor()">
+                    <input id="radio-rosa" type="radio" name="radio">
+                    <span id="rosa" class="circulo-rosa"></span>
+                </label>
+                
+                <label class="container" onclick="selectColor()">
+                    <input id="radio-azul" type="radio" name="radio">
+                    <span id="azul" class="circulo-azul"></span>
+                </label>
+                
+                <label class="container" onclick="selectColor()">
+                    <input id="radio-marrom" type="radio" name="radio">
+                    <span id="marrom" class="circulo-marrom"></span>
+                </label>
+
+                <label class="container" onclick="selectColor()">
+                    <input id="radio-preto" checked="checked" type="radio" name="radio">
+                    <span id="preto" class="circulo-preto"></span>
+                </label>
             </div>
 
             <div class="tamanho-title">
@@ -272,5 +287,6 @@
     </div>
 
     <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

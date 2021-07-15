@@ -34,6 +34,10 @@ img{
     max-width: 100%;
 }
 
+span{
+    cursor: pointer;
+}
+
 body{
     box-sizing: border-box;
     overflow-x: hidden;
@@ -322,10 +326,31 @@ body{
         }
 
         .cores-selecao{
-            margin-left: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-left: 17px;
+            height: 40px;
             >span{
-                
                 margin: 13px 5px 17px 5px;
+            }
+
+            .container{
+                position: relative;
+                cursor: pointer;
+
+                >input{
+                    width: 22px;
+                    height: 22px;
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+
+            .cor-selecionada{
+                border: 2px solid #DE8F75;
+                border-radius: 50%;
             }
 
             .circulo-rosa{
@@ -392,8 +417,6 @@ body{
             }
 
 
-
-
         }
 
         .tamanhos{
@@ -408,6 +431,13 @@ body{
                 border-radius: 2px;
                 padding: 10px;
                 margin-right: 3px; 
+            }
+
+            .numero:hover{
+                background-color: #DE8F75;
+                color: #FFFFFF;
+                font-weight: bold;
+                cursor: pointer;
             }
         }
 
